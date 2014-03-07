@@ -308,7 +308,7 @@
     [soduku Init_Seeds];
     [soduku Sorted_List];
     
-    if ([soduku Fill_List:[[soduku getList_Tab] objectAtIndex:0]]) {
+    if ([soduku Fill_List:[[soduku getList_Tab] objectAtIndex:[soduku first]]]) {
         [_00 setText:[soduku getList_Tab:0]];
         [_01 setText:[soduku getList_Tab:1]];
         [_02 setText:[soduku getList_Tab:2]];
@@ -347,7 +347,7 @@
         [_35 setText:[soduku getList_Tab:32]];
         [_36 setText:[soduku getList_Tab:33]];
         [_37 setText:[soduku getList_Tab:34]];
-        [_38 setText:[soduku getList_Tab:25]];
+        [_38 setText:[soduku getList_Tab:35]];
 
         [_40 setText:[soduku getList_Tab:36]];
         [_41 setText:[soduku getList_Tab:37]];
@@ -496,6 +496,104 @@
     [self._86 resignFirstResponder];
     [self._87 resignFirstResponder];
     [self._88 resignFirstResponder];
+
+}
+
+- (IBAction)Clear_All:(id)sender {
+    for (int i=0; i<81; i++) {
+        level[i/9][i%9]=0;
+    }
+    [soduku setSoudu_corp:level];
+    
+    [_00 setText:[soduku getList_Tab:0]];
+    [_01 setText:[soduku getList_Tab:1]];
+    [_02 setText:[soduku getList_Tab:2]];
+    [_03 setText:[soduku getList_Tab:3]];
+    [_04 setText:[soduku getList_Tab:4]];
+    [_05 setText:[soduku getList_Tab:5]];
+    [_06 setText:[soduku getList_Tab:6]];
+    [_07 setText:[soduku getList_Tab:7]];
+    [_08 setText:[soduku getList_Tab:8]];
+    
+    [_10 setText:[soduku getList_Tab:9]];
+    [_11 setText:[soduku getList_Tab:10]];
+    [_12 setText:[soduku getList_Tab:11]];
+    [_13 setText:[soduku getList_Tab:12]];
+    [_14 setText:[soduku getList_Tab:13]];
+    [_15 setText:[soduku getList_Tab:14]];
+    [_16 setText:[soduku getList_Tab:15]];
+    [_17 setText:[soduku getList_Tab:16]];
+    [_18 setText:[soduku getList_Tab:17]];
+    
+    [_20 setText:[soduku getList_Tab:18]];
+    [_21 setText:[soduku getList_Tab:19]];
+    [_22 setText:[soduku getList_Tab:20]];
+    [_23 setText:[soduku getList_Tab:21]];
+    [_24 setText:[soduku getList_Tab:22]];
+    [_25 setText:[soduku getList_Tab:23]];
+    [_26 setText:[soduku getList_Tab:24]];
+    [_27 setText:[soduku getList_Tab:25]];
+    [_28 setText:[soduku getList_Tab:26]];
+    
+    [_30 setText:[soduku getList_Tab:27]];
+    [_31 setText:[soduku getList_Tab:28]];
+    [_32 setText:[soduku getList_Tab:29]];
+    [_33 setText:[soduku getList_Tab:30]];
+    [_34 setText:[soduku getList_Tab:31]];
+    [_35 setText:[soduku getList_Tab:32]];
+    [_36 setText:[soduku getList_Tab:33]];
+    [_37 setText:[soduku getList_Tab:34]];
+    [_38 setText:[soduku getList_Tab:35]];
+    
+    [_40 setText:[soduku getList_Tab:36]];
+    [_41 setText:[soduku getList_Tab:37]];
+    [_42 setText:[soduku getList_Tab:38]];
+    [_43 setText:[soduku getList_Tab:39]];
+    [_44 setText:[soduku getList_Tab:40]];
+    [_45 setText:[soduku getList_Tab:41]];
+    [_46 setText:[soduku getList_Tab:42]];
+    [_47 setText:[soduku getList_Tab:43]];
+    [_48 setText:[soduku getList_Tab:44]];
+    
+    [_50 setText:[soduku getList_Tab:45]];
+    [_51 setText:[soduku getList_Tab:46]];
+    [_52 setText:[soduku getList_Tab:47]];
+    [_53 setText:[soduku getList_Tab:48]];
+    [_54 setText:[soduku getList_Tab:49]];
+    [_55 setText:[soduku getList_Tab:50]];
+    [_56 setText:[soduku getList_Tab:51]];
+    [_57 setText:[soduku getList_Tab:52]];
+    [_58 setText:[soduku getList_Tab:53]];
+    
+    [_60 setText:[soduku getList_Tab:54]];
+    [_61 setText:[soduku getList_Tab:55]];
+    [_62 setText:[soduku getList_Tab:56]];
+    [_63 setText:[soduku getList_Tab:57]];
+    [_64 setText:[soduku getList_Tab:58]];
+    [_65 setText:[soduku getList_Tab:59]];
+    [_66 setText:[soduku getList_Tab:60]];
+    [_67 setText:[soduku getList_Tab:61]];
+    [_68 setText:[soduku getList_Tab:62]];
+    
+    [_70 setText:[soduku getList_Tab:63]];
+    [_71 setText:[soduku getList_Tab:64]];
+    [_72 setText:[soduku getList_Tab:65]];
+    [_73 setText:[soduku getList_Tab:66]];
+    [_74 setText:[soduku getList_Tab:67]];
+    [_75 setText:[soduku getList_Tab:68]];
+    [_76 setText:[soduku getList_Tab:69]];
+    [_77 setText:[soduku getList_Tab:70]];
+    [_78 setText:[soduku getList_Tab:71]];
+    
+    [_80 setText:[soduku getList_Tab:72]];
+    [_81 setText:[soduku getList_Tab:73]];
+    [_82 setText:[soduku getList_Tab:74]];
+    [_83 setText:[soduku getList_Tab:75]];
+    [_84 setText:[soduku getList_Tab:76]];
+    [_85 setText:[soduku getList_Tab:77]];
+    [_86 setText:[soduku getList_Tab:78]];
+    [_87 setText:[soduku getList_Tab:79]];
+    [_88 setText:[soduku getList_Tab:80]];
 
 }
 @end

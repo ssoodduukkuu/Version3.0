@@ -20,6 +20,7 @@
 -(NSMutableArray *) getList_Tab;
 -(BOOL) Check_Seed:(int) p;
 -(BOOL) Fill_List:(Seed *) it;
+-(int) first;
 
 -(void) Afficher;
 

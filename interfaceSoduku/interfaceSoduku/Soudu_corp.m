@@ -62,7 +62,7 @@
             }
             for (int i=0; i<9; i++) {
                 if ([[List_Tab objectAtIndex:9*i+p%9] getV_Value]!=0) {
-                    [seed setV_Maybe:[[List_Tab objectAtIndex:9*i+p%9] getV_Value]];
+                    [seed setV_Maybe:[[List_Tab objectAtIndex:p+(i-p/9)*9] getV_Value]];
                 }
             }
             if (((p/9)%3==0)&&((p%9)%3==0)) {
@@ -343,6 +343,11 @@
                 printf(" %d",[self getList_T:i*9+j]);
             }
         }
+}
+
+-(int) first
+{
+    return List_Order[0];
 }
 
 @end

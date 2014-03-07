@@ -106,5 +106,6 @@
 
 - (IBAction)Generate_Click:(id)sender;
 - (IBAction)hideKeyboard:(id)sender;
+- (IBAction)Clear_All:(id)sender;
 
 @end
