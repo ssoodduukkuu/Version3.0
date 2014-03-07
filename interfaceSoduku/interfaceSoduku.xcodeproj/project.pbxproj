@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51253F318C8A31400295490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51253F218C8A31400295490 /* Foundation.framework */; };
+		B51253F518C8A31400295490 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51253F418C8A31400295490 /* CoreGraphics.framework */; };
+		B51253F718C8A31400295490 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51253F618C8A31400295490 /* UIKit.framework */; };
+		B51253FD18C8A31400295490 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B51253FB18C8A31400295490 /* InfoPlist.strings */; };
+		B51253FF18C8A31400295490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B51253FE18C8A31400295490 /* main.m */; };
+		B512540318C8A31400295490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B512540218C8A31400295490 /* AppDelegate.m */; };
+		B512540618C8A31400295490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512540418C8A31400295490 /* Main.storyboard */; };
+		B512540918C8A31400295490 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512540818C8A31400295490 /* ViewController.m */; };
+		B512540B18C8A31400295490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B512540A18C8A31400295490 /* Images.xcassets */; };
+		B512541218C8A31400295490 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B512541118C8A31400295490 /* XCTest.framework */; };
+		B512541318C8A31400295490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51253F218C8A31400295490 /* Foundation.framework */; };
+		B512541418C8A31400295490 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51253F618C8A31400295490 /* UIKit.framework */; };
+		B512541C18C8A31400295490 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B512541A18C8A31400295490 /* InfoPlist.strings */; };
+		B512541E18C8A31400295490 /* interfaceSodukuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B512541D18C8A31400295490 /* interfaceSodukuTests.m */; };
+		B5161EDC18C9435A005596FA /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = B5161EDB18C9435A005596FA /* Seed.m */; };
+		B5161EDF18C9489F005596FA /* Soudu_corp.m in Sources */ = {isa = PBXBuildFile; fileRef = B5161EDE18C9489F005596FA /* Soudu_corp.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B512541518C8A31400295490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51253E718C8A31400295490 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51253EE18C8A31400295490;
+			remoteInfo = interfaceSoduku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B51253EF18C8A31400295490 /* interfaceSoduku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = interfaceSoduku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51253F218C8A31400295490 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B51253F418C8A31400295490 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B51253F618C8A31400295490 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B51253FA18C8A31400295490 /* interfaceSoduku-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "interfaceSoduku-Info.plist"; sourceTree = "<group>"; };
+		B51253FC18C8A31400295490 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B51253FE18C8A31400295490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B512540018C8A31400295490 /* interfaceSoduku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "interfaceSoduku-Prefix.pch"; sourceTree = "<group>"; };
+		B512540118C8A31400295490 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B512540218C8A31400295490 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B512540518C8A31400295490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B512540718C8A31400295490 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B512540818C8A31400295490 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B512540A18C8A31400295490 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B512541018C8A31400295490 /* interfaceSodukuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = interfaceSodukuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B512541118C8A31400295490 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B512541918C8A31400295490 /* interfaceSodukuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "interfaceSodukuTests-Info.plist"; sourceTree = "<group>"; };
+		B512541B18C8A31400295490 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B512541D18C8A31400295490 /* interfaceSodukuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = interfaceSodukuTests.m; sourceTree = "<group>"; };
+		B5161EDA18C9435A005596FA /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
+		B5161EDB18C9435A005596FA /* Seed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seed.m; sourceTree = "<group>"; };
+		B5161EDD18C9489F005596FA /* Soudu_corp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soudu_corp.h; sourceTree = "<group>"; };
+		B5161EDE18C9489F005596FA /* Soudu_corp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soudu_corp.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51253EC18C8A31400295490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51253F518C8A31400295490 /* CoreGraphics.framework in Frameworks */,
+				B51253F718C8A31400295490 /* UIKit.framework in Frameworks */,
+				B51253F318C8A31400295490 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B512540D18C8A31400295490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512541218C8A31400295490 /* XCTest.framework in Frameworks */,
+				B512541418C8A31400295490 /* UIKit.framework in Frameworks */,
+				B512541318C8A31400295490 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51253E618C8A31400295490 = {
+			isa = PBXGroup;
+			children = (
+				B51253F818C8A31400295490 /* interfaceSoduku */,
+				B512541718C8A31400295490 /* interfaceSodukuTests */,
+				B51253F118C8A31400295490 /* Frameworks */,
+				B51253F018C8A31400295490 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51253F018C8A31400295490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51253EF18C8A31400295490 /* interfaceSoduku.app */,
+				B512541018C8A31400295490 /* interfaceSodukuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51253F118C8A31400295490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B51253F218C8A31400295490 /* Foundation.framework */,
+				B51253F418C8A31400295490 /* CoreGraphics.framework */,
+				B51253F618C8A31400295490 /* UIKit.framework */,
+				B512541118C8A31400295490 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51253F818C8A31400295490 /* interfaceSoduku */ = {
+			isa = PBXGroup;
+			children = (
+				B512540118C8A31400295490 /* AppDelegate.h */,
+				B512540218C8A31400295490 /* AppDelegate.m */,
+				B512540418C8A31400295490 /* Main.storyboard */,
+				B512540718C8A31400295490 /* ViewController.h */,
+				B512540818C8A31400295490 /* ViewController.m */,
+				B512540A18C8A31400295490 /* Images.xcassets */,
+				B51253F918C8A31400295490 /* Supporting Files */,
+				B5161EDA18C9435A005596FA /* Seed.h */,
+				B5161EDB18C9435A005596FA /* Seed.m */,
+				B5161EDD18C9489F005596FA /* Soudu_corp.h */,
+				B5161EDE18C9489F005596FA /* Soudu_corp.m */,
+			);
+			path = interfaceSoduku;
+			sourceTree = "<group>";
+		};
+		B51253F918C8A31400295490 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51253FA18C8A31400295490 /* interfaceSoduku-Info.plist */,
+				B51253FB18C8A31400295490 /* InfoPlist.strings */,
+				B51253FE18C8A31400295490 /* main.m */,
+				B512540018C8A31400295490 /* interfaceSoduku-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B512541718C8A31400295490 /* interfaceSodukuTests */ = {
+			isa = PBXGroup;
+			children = (
+				B512541D18C8A31400295490 /* interfaceSodukuTests.m */,
+				B512541818C8A31400295490 /* Supporting Files */,
+			);
+			path = interfaceSodukuTests;
+			sourceTree = "<group>";
+		};
+		B512541818C8A31400295490 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B512541918C8A31400295490 /* interfaceSodukuTests-Info.plist */,
+				B512541A18C8A31400295490 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51253EE18C8A31400295490 /* interfaceSoduku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B512542118C8A31400295490 /* Build configuration list for PBXNativeTarget "interfaceSoduku" */;
+			buildPhases = (
+				B51253EB18C8A31400295490 /* Sources */,
+				B51253EC18C8A31400295490 /* Frameworks */,
+				B51253ED18C8A31400295490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = interfaceSoduku;
+			productName = interfaceSoduku;
+			productReference = B51253EF18C8A31400295490 /* interfaceSoduku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B512540F18C8A31400295490 /* interfaceSodukuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B512542418C8A31400295490 /* Build configuration list for PBXNativeTarget "interfaceSodukuTests" */;
+			buildPhases = (
+				B512540C18C8A31400295490 /* Sources */,
+				B512540D18C8A31400295490 /* Frameworks */,
+				B512540E18C8A31400295490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B512541618C8A31400295490 /* PBXTargetDependency */,
+			);
+			name = interfaceSodukuTests;
+			productName = interfaceSodukuTests;
+			productReference = B512541018C8A31400295490 /* interfaceSodukuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51253E718C8A31400295490 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Dun;
+				TargetAttributes = {
+					B512540F18C8A31400295490 = {
+						TestTargetID = B51253EE18C8A31400295490;
+					};
+				};
+			};
+			buildConfigurationList = B51253EA18C8A31400295490 /* Build configuration list for PBXProject "interfaceSoduku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B51253E618C8A31400295490;
+			productRefGroup = B51253F018C8A31400295490 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51253EE18C8A31400295490 /* interfaceSoduku */,
+				B512540F18C8A31400295490 /* interfaceSodukuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51253ED18C8A31400295490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512540B18C8A31400295490 /* Images.xcassets in Resources */,
+				B51253FD18C8A31400295490 /* InfoPlist.strings in Resources */,
+				B512540618C8A31400295490 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B512540E18C8A31400295490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512541C18C8A31400295490 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51253EB18C8A31400295490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512540918C8A31400295490 /* ViewController.m in Sources */,
+				B5161EDF18C9489F005596FA /* Soudu_corp.m in Sources */,
+				B512540318C8A31400295490 /* AppDelegate.m in Sources */,
+				B5161EDC18C9435A005596FA /* Seed.m in Sources */,
+				B51253FF18C8A31400295490 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B512540C18C8A31400295490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512541E18C8A31400295490 /* interfaceSodukuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B512541618C8A31400295490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51253EE18C8A31400295490 /* interfaceSoduku */;
+			targetProxy = B512541518C8A31400295490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B51253FB18C8A31400295490 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51253FC18C8A31400295490 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B512540418C8A31400295490 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B512540518C8A31400295490 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B512541A18C8A31400295490 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B512541B18C8A31400295490 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B512541F18C8A31400295490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B512542018C8A31400295490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B512542218C8A31400295490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "interfaceSoduku/interfaceSoduku-Prefix.pch";
+				INFOPLIST_FILE = "interfaceSoduku/interfaceSoduku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B512542318C8A31400295490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "interfaceSoduku/interfaceSoduku-Prefix.pch";
+				INFOPLIST_FILE = "interfaceSoduku/interfaceSoduku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B512542518C8A31400295490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/interfaceSoduku.app/interfaceSoduku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "interfaceSoduku/interfaceSoduku-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "interfaceSodukuTests/interfaceSodukuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B512542618C8A31400295490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/interfaceSoduku.app/interfaceSoduku";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "interfaceSoduku/interfaceSoduku-Prefix.pch";
+				INFOPLIST_FILE = "interfaceSodukuTests/interfaceSodukuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51253EA18C8A31400295490 /* Build configuration list for PBXProject "interfaceSoduku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B512541F18C8A31400295490 /* Debug */,
+				B512542018C8A31400295490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B512542118C8A31400295490 /* Build configuration list for PBXNativeTarget "interfaceSoduku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B512542218C8A31400295490 /* Debug */,
+				B512542318C8A31400295490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B512542418C8A31400295490 /* Build configuration list for PBXNativeTarget "interfaceSodukuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B512542518C8A31400295490 /* Debug */,
+				B512542618C8A31400295490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51253E718C8A31400295490 /* Project object */;
+}
