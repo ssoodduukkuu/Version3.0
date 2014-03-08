@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "Soudu_corp.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate ,UIActionSheetDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *_00;
 @property (strong, nonatomic) IBOutlet UITextField *_01;
 @property (strong, nonatomic) IBOutlet UITextField *_02;
@@ -107,5 +109,6 @@
 - (IBAction)Generate_Click:(id)sender;
 - (IBAction)hideKeyboard:(id)sender;
 - (IBAction)Clear_All:(id)sender;
+
 
 @end

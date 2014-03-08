@@ -23,6 +23,7 @@
 		B512541E18C8A31400295490 /* interfaceSodukuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B512541D18C8A31400295490 /* interfaceSodukuTests.m */; };
 		B5161EDC18C9435A005596FA /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = B5161EDB18C9435A005596FA /* Seed.m */; };
 		B5161EDF18C9489F005596FA /* Soudu_corp.m in Sources */ = {isa = PBXBuildFile; fileRef = B5161EDE18C9489F005596FA /* Soudu_corp.m */; };
+		B57A19DF18CB77980037E649 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57A19DE18CB77980037E649 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B5161EDB18C9435A005596FA /* Seed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seed.m; sourceTree = "<group>"; };
 		B5161EDD18C9489F005596FA /* Soudu_corp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soudu_corp.h; sourceTree = "<group>"; };
 		B5161EDE18C9489F005596FA /* Soudu_corp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soudu_corp.m; sourceTree = "<group>"; };
+		B57A19DE18CB77980037E649 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57A19DF18CB77980037E649 /* AudioToolbox.framework in Frameworks */,
 				B51253F518C8A31400295490 /* CoreGraphics.framework in Frameworks */,
 				B51253F718C8A31400295490 /* UIKit.framework in Frameworks */,
 				B51253F318C8A31400295490 /* Foundation.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		B51253F118C8A31400295490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B57A19DE18CB77980037E649 /* AudioToolbox.framework */,
 				B51253F218C8A31400295490 /* Foundation.framework */,
 				B51253F418C8A31400295490 /* CoreGraphics.framework */,
 				B51253F618C8A31400295490 /* UIKit.framework */,

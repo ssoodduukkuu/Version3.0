@@ -29,7 +29,6 @@
             _70,_71,_72,_73,_74,_75,_76,_77,_78,
             _80,_81,_82,_83,_84,_85,_86,_87,_88;
 
-
 - (void)viewDidLoad
 {
     soduku=[[Soudu_corp alloc] init];
@@ -308,7 +307,7 @@
     [soduku Init_Seeds];
     [soduku Sorted_List];
     
-    if ([soduku Fill_List:[[soduku getList_Tab] objectAtIndex:[soduku first]]]) {
+    if ([soduku Is_legal] && [soduku Fill_List:[[soduku getList_Tab] objectAtIndex:[soduku first]]]) {
         [_00 setText:[soduku getList_Tab:0]];
         [_01 setText:[soduku getList_Tab:1]];
         [_02 setText:[soduku getList_Tab:2]];
@@ -402,7 +401,11 @@
     }
     else
     {
-        NSLog(@"Warning !!");
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        UIAlertView *alertDialog;
+        alertDialog = [[UIAlertView alloc]
+                       initWithTitle:@"Warning !" message:@"Some of the numbers are entered twice or more !" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertDialog show];
     }
 }
 

@@ -39,6 +39,19 @@
     }
 }
 
+-(BOOL) Is_legal
+{
+    BOOL flag=YES;
+    
+    for (NSNumber *p in [Init_T reverseObjectEnumerator]) {
+        if (![self Check_Seed:[p intValue]]) {
+            flag=NO;
+        }
+    }
+    
+    return flag;
+}
+
 -(BOOL) Is_in:(int)p
 {
     BOOL flag=NO;
