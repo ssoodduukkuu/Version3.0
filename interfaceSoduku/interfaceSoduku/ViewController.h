@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "opencv2/highgui/ios.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "Soudu_corp.h"
 
 @interface ViewController : UIViewController <UIAlertViewDelegate ,UIActionSheetDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *LTime;
 
 @property (strong, nonatomic) IBOutlet UITextField *_00;
 @property (strong, nonatomic) IBOutlet UITextField *_01;
@@ -103,7 +106,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *_88;
 
 @property (strong, nonatomic) IBOutlet UIButton *Generate;
-
 
 
 - (IBAction)Generate_Click:(id)sender;

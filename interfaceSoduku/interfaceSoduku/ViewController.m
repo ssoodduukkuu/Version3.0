@@ -19,7 +19,7 @@
     NSString *number;
 }
 
-@synthesize _00,_01,_02,_03,_04,_05,_06,_07,_08,
+@synthesize LTime,_00,_01,_02,_03,_04,_05,_06,_07,_08,
             _10,_11,_12,_13,_14,_15,_16,_17,_18,
             _20,_21,_22,_23,_24,_25,_26,_27,_28,
             _30,_31,_32,_33,_34,_35,_36,_37,_38,
@@ -43,7 +43,7 @@
 }
 
 - (IBAction)Generate_Click:(id)sender {
-
+    int64 timeStart=cv::getTickCount();
     for (int i=0; i<81; i++) {
         switch (i) {
             case 0:
@@ -407,6 +407,9 @@
                        initWithTitle:@"Warning !" message:@"Some of the numbers are entered twice or more !" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertDialog show];
     }
+    int64 timeEnd=cv::getTickCount();
+    float time=1000.f*float(timeEnd-timeStart)/cv::getTickFrequency();
+    LTime.text=[NSString stringWithFormat:@"%f",time];
 }
 
 - (IBAction)hideKeyboard:(id)sender {
@@ -503,6 +506,7 @@
 }
 
 - (IBAction)Clear_All:(id)sender {
+    LTime.text=@"";
     for (int i=0; i<81; i++) {
         level[i/9][i%9]=0;
     }
