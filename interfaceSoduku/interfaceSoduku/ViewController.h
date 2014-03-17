@@ -105,12 +105,14 @@
 @property (strong, nonatomic) IBOutlet UITextField *_87;
 @property (strong, nonatomic) IBOutlet UITextField *_88;
 
-@property (strong, nonatomic) IBOutlet UIButton *GenerateClearButton;
+@property (strong, nonatomic) IBOutlet UIButton *GenerateButton;
+@property (strong, nonatomic) IBOutlet UIButton *ScanButton;
 
 
 - (IBAction)Generate_Click:(id)sender;
 - (IBAction)hideKeyboard:(id)sender;
 - (IBAction)Clear_All:(id)sender;
+- (IBAction)ScanButton_Click:(id)sender;
 
 
 @end

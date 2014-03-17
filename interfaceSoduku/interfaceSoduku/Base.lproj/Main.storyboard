@@ -514,15 +514,15 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLg-4M-1rG">
-                                <rect key="frame" x="125" y="395" width="71" height="38"/>
+                                <rect key="frame" x="125" y="437" width="71" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan"/>
+                                <state key="normal" title="Generate"/>
                                 <connections>
                                     <action selector="Generate_Click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eu0-fQ-MWA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnp-9S-b0d">
-                                <rect key="frame" x="130" y="433" width="63" height="30"/>
+                                <rect key="frame" x="129" y="483" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -544,12 +544,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKV-6k-mB0">
+                                <rect key="frame" x="145" y="399" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ScanButton_Click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DtJ-af-Akk"/>
+                                    <segue destination="fL2-cP-GWU" kind="modal" id="L16-z2-Q0Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="GenerateClearButton" destination="SLg-4M-1rG" id="9cr-fY-Nmh"/>
                         <outlet property="LTime" destination="Qq0-bb-25r" id="3g7-b5-nMU"/>
+                        <outlet property="ScanButton" destination="GKV-6k-mB0" id="Akv-Cq-x21"/>
                         <outlet property="_00" destination="yED-x7-Hyn" id="RRC-3h-9oc"/>
                         <outlet property="_01" destination="IA7-0q-niu" id="ipz-QJ-fWw"/>
                         <outlet property="_02" destination="7qp-cw-0Sv" id="OLb-A3-l17"/>
@@ -635,6 +646,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-207" y="52"/>
+        </scene>
+        <!--numberCapture-->
+        <scene sceneID="oTk-3w-7OV">
+            <objects>
+                <viewController storyboardIdentifier="NumberCapture" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fL2-cP-GWU" userLabel="numberCapture" customClass="NumberCapture" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OFv-8u-hX7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jzi-Wm-cMg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EEU-2c-hXh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otf-lh-M47">
+                                <rect key="frame" x="0.0" y="54" width="320" height="317"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QzH-Sj-FI6">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Capture" id="1a9-C9-qak">
+                                        <connections>
+                                            <action selector="startCaptureButtonPressed:" destination="fL2-cP-GWU" id="Rp1-2h-442"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Take" id="OLz-24-ymp">
+                                        <connections>
+                                            <action selector="takePhotoButtonPressed:" destination="fL2-cP-GWU" id="GWj-dU-rsU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="otf-lh-M47" id="yQC-DW-jH4"/>
+                        <outlet property="startCaptureButton" destination="1a9-C9-qak" id="SZ2-Hu-zkZ"/>
+                        <outlet property="takePhotoButton" destination="OLz-24-ymp" id="5OW-F0-Xzz"/>
+                        <outlet property="toolbar" destination="QzH-Sj-FI6" id="YXy-Il-gw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVH-de-nHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="52"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
