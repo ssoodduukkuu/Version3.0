@@ -105,7 +105,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *_87;
 @property (strong, nonatomic) IBOutlet UITextField *_88;
 
-@property (strong, nonatomic) IBOutlet UIButton *Generate;
+@property (strong, nonatomic) IBOutlet UIButton *GenerateClearButton;
 
 
 - (IBAction)Generate_Click:(id)sender;
