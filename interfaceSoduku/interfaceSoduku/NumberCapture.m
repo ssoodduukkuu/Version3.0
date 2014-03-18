@@ -66,7 +66,7 @@
 - (IBAction)takePhotoButtonPressed:(id)sender {
     NSString *take=@"Take";
     NSString *leave=@"Leave";
-    if (takePhotoButton.title==take) {
+    if (takePhotoButton.title!=leave) {
         [takePhotoButton setTitle:leave];
         [photoCamera takePicture];
     }
