@@ -114,5 +114,7 @@
 - (IBAction)Clear_All:(id)sender;
 - (IBAction)ScanButton_Click:(id)sender;
 
+- (void) setLevel:(int[9][9]) lev;
+
 
 @end

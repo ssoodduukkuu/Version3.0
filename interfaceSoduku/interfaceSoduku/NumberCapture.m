@@ -33,7 +33,7 @@
     photoCamera = [[CvPhotoCamera alloc] initWithParentView:imageView];
     photoCamera.delegate=self;
     photoCamera.defaultAVCaptureDevicePosition=AVCaptureDevicePositionBack;
-    photoCamera.defaultAVCaptureSessionPreset=AVCaptureSessionPresetPhoto;
+    photoCamera.defaultAVCaptureSessionPreset=AVCaptureSessionPreset352x288;
     photoCamera.defaultAVCaptureVideoOrientation=AVCaptureVideoOrientationPortrait;
     
     NSString *filePath=[[NSBundle mainBundle] pathForResource:@"scratches" ofType:@"png"];
@@ -58,6 +58,7 @@
     [photoCamera start];
     
     [self.view addSubview:imageView];
+    
     [takePhotoButton setEnabled:YES];
     [startCaptureButton setEnabled:NO];
     
@@ -80,13 +81,19 @@
 -(void) photoCamera:(CvPhotoCamera *)photoCamera capturedImage:(UIImage *)image
 {
     [photoCamera stop];
+    
     resultView=[[UIImageView alloc] initWithFrame:imageView.bounds];
+    resultView.frame=imageView.frame;
     UIImage * result=[self applyEffect:image];
     
     [resultView setImage:result];
     [self.view addSubview:resultView];
     
-    [takePhotoButton setEnabled:NO];
+    /*
+    UIImage * result=[self applyEffect:image];
+    [imageView setImage:result];
+    [self.view addSubview:imageView];
+    */
     [startCaptureButton setEnabled:YES];
 }
 
@@ -105,6 +112,22 @@
     
     RetroFilter retroFilter(params);
     retroFilter.applyToPhoto(frame, finalFrame);
+    
+    /****************CALCULATE THE NUMBRES***************/
+    for (int i=0; i<9; i++) {
+        for (int j=0; j<9; j++) {
+            lev[i][j]=0;
+            if (i==j) {
+                lev[i][j]=i+1;
+            }
+        }
+    }
+    
+    //int width=(int) image.size.height;//width=640,height=480
+    //NSString *str=[[NSString alloc] initWithFormat:@"%i",width];
+    //((ViewController *) self.presentingViewController).LTime.text=str;
+    
+    [(ViewController *) self.presentingViewController setLevel:lev];
     
     UIImage *resImage=MatToUIImage(finalFrame);
     return [UIImage imageWithCGImage:[resImage CGImage] scale:1.0 orientation:UIImageOrientationLeftMirrored];

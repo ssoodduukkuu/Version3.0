@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RetroFilter.h"
+#import "ViewController.h"
 #import <opencv2/highgui/ios.h>
 
 @interface NumberCapture : UIViewController<CvPhotoCameraDelegate>
@@ -15,6 +16,7 @@
     CvPhotoCamera *photoCamera;
     UIImageView *resultView;
     RetroFilter::Parameters params;
+    int lev[9][9];
 }
 
 @property (nonatomic, strong) CvPhotoCamera *photoCamera;
